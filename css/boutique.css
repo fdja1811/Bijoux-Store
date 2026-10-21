@@ -1,0 +1,174 @@
+/* Styles généraux pour la mise en page */
+body {
+    font-family: Arial, sans-serif; /* Définit la police générale du site */
+    margin: 0; /* Enlève les marges par défaut autour du body */
+    padding: 0; /* Enlève les espacements par défaut autour du body */
+    background-color: #f9f9f9; /* Définit une couleur de fond claire pour la page */
+}
+
+/* Styles de l'en-tête */
+header {
+    background-color: black; /* Définit un fond noir pour l'en-tête */
+    color: white; /* Définit la couleur du texte en blanc */
+    padding: 15px 0; /* Ajoute de l'espace en haut et en bas de l'en-tête */
+    text-align: center; /* Centre le texte dans l'en-tête */
+}
+
+.container {
+    width: 80%; /* Définit la largeur du conteneur à 80% de l'écran */
+    margin: auto; /* Centre le conteneur horizontalement */
+}
+
+/* Styles de la navigation */
+nav ul {
+    list-style-type: none; /* Supprime les puces par défaut dans la liste */
+    padding: 0; /* Enlève les espacements internes de la liste */
+}
+
+nav ul li {
+    display: inline; /* Affiche les éléments de la liste en ligne (horizontalement) */
+    margin: 0 15px; /* Ajoute de l'espace à gauche et à droite de chaque élément */
+}
+
+nav ul li a {
+    color: white; /* Définit la couleur du texte des liens en blanc */
+    text-decoration: none; /* Enlève le soulignement des liens */
+}
+
+/* Styles des boutons de filtrage */
+.filtre {
+    text-align: center; /* Centre le contenu de la section de filtrage */
+    margin: 20px 0; /* Ajoute de l'espace en haut et en bas de la section */
+}
+
+.filtre button {
+    background-color: red; /* Définit un fond rouge pour les boutons */
+    color: white; /* Définit le texte des boutons en blanc */
+    border: none; /* Supprime la bordure des boutons */
+    padding: 10px 15px; /* Ajoute de l'espace à l'intérieur des boutons */
+    margin: 5px; /* Ajoute de l'espace entre les boutons */
+    cursor: pointer; /* Change le curseur pour montrer que c'est cliquable */
+}
+
+/* Mise en page des produits */
+.produits {
+    display: flex; /* Affiche les produits sous forme de flexbox */
+    flex-wrap: wrap; /* Permet aux produits de passer à la ligne suivante si nécessaire */
+    justify-content: center; /* Centre les produits horizontalement */
+    gap: 20px; /* Ajoute de l'espace entre les produits */
+    padding: 20px; /* Ajoute de l'espace autour des produits */
+}
+
+/* Styles pour chaque produit */
+.produit {
+    background-color: white; /* Définit un fond blanc pour chaque produit */
+    padding: 15px; /* Ajoute de l'espace à l'intérieur de chaque produit */
+    border-radius: 10px; /* Arrondit les coins des produits */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre sous chaque produit */
+    text-align: center; /* Centre le texte à l'intérieur de chaque produit */
+    width: 250px; /* Définit une largeur fixe pour chaque produit */
+    height: 350px; /* Définit une hauteur fixe pour chaque produit */
+    display: flex; /* Utilise flexbox pour organiser le contenu du produit */
+    flex-direction: column; /* Aligne les éléments du produit de haut en bas */
+    justify-content: space-between; /* Espacement égal entre les éléments du produit */
+    position: relative; /* Permet de positionner des éléments relatifs à chaque produit */
+}
+
+.produit img {
+    width: 100%; /* Définit l'image pour occuper toute la largeur du produit */
+    height: 200px; /* Définit une hauteur fixe pour l'image */
+    object-fit: cover; /* Couvre toute la zone de l'image tout en gardant les proportions */
+    border-radius: 5px; /* Arrondit les coins de l'image */
+    transition: transform 0.3s ease; /* Ajoute une transition lors du survol de l'image */
+    cursor: pointer; /* Change le curseur pour montrer que l'image est cliquable */
+}
+
+.produit img:hover {
+    transform: scale(1.05); /* Agrandit l'image légèrement au survol */
+}
+
+.produit h4 {
+    margin: 10px 0; /* Ajoute de l'espace au-dessus et au-dessous du titre */
+    font-size: 1.1em; /* Définit une taille de police légèrement plus grande pour le titre */
+}
+
+.produit p {
+    font-weight: bold; /* Rend le texte du prix en gras */
+    font-size: 1em; /* Définit la taille de la police pour le prix */
+    margin: 5px 0; /* Ajoute de l'espace autour du prix */
+    color: #333; /* Définit la couleur du texte du prix en gris foncé */
+}
+
+.produit button {
+    background-color: red; /* Définit un fond rouge pour le bouton d'ajout au panier */
+    color: white; /* Définit le texte du bouton en blanc */
+    border: none; /* Supprime la bordure du bouton */
+    padding: 10px; /* Ajoute de l'espace à l'intérieur du bouton */
+    cursor: pointer; /* Change le curseur pour montrer que le bouton est cliquable */
+    width: 100%; /* Fait en sorte que le bouton occupe toute la largeur du produit */
+    margin-top: 10px; /* Ajoute de l'espace au-dessus du bouton */
+}
+
+.produit small {
+    display: block; /* Affiche le texte en petit sous forme de bloc */
+    margin-top: 5px; /* Ajoute de l'espace au-dessus du texte en petit */
+    font-size: 0.8em; /* Définit une taille de police plus petite pour le texte */
+    color: #777; /* Définit une couleur grise pour le texte en petit */
+}
+
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .produits {
+        flex-direction: column; /* Affiche les produits en colonne sur les petits écrans */
+        align-items: center; /* Centre les produits horizontalement */
+    }
+
+    
+}
+
+@media (max-width: 480px) {
+    nav ul li {
+        display: block; /* Affiche les éléments du menu en bloc sur les très petits écrans */
+        margin: 10px 0; /* Ajoute de l'espace entre les éléments du menu */
+    }
+
+    .filtre button {
+        width: 100%; /* Fait en sorte que les boutons de filtrage prennent toute la largeur */
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    color: white;
+    margin-top: 20px;
+}
+/* === LIGHTBOX === */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+}
+.lightbox img {
+    max-width: 90%; max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px white;
+}
+
+/* === SUCCESS MESSAGE === */
+.success-message {
+    background: #d4edda;
+    padding: 1rem;
+    border-radius: 8px;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    max-width: 500px;
+    margin: 2rem auto;
+}

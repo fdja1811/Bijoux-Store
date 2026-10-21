@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    background: black;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* SECTION PANIER */
+.panier-container {
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Produits dans le panier */
+.panier-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.panier-item img {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.panier-item div {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.panier-item h4 {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #333;
+}
+
+.panier-item p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Bouton supprimer */
+.panier-item button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.panier-item button:hover {
+    background-color: #c0392b;
+}
+
+/* Total et bouton Vider Panier */
+.panier-footer {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#vider-panier {
+    background-color: #d35400;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+#vider-panier:hover {
+    background-color: #a04000;
+}
+
+/* Boutons de paiement */
+.paiement {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.paiement button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.paiement button:hover {
+    background-color: #27ae60;
+}
+
+/* Icônes des modes de paiement */
+.modes-paiement {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.modes-paiement img {
+    width: 50px;
+    margin: 0 10px;
+}

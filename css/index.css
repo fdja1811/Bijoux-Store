@@ -1,0 +1,217 @@
+/* Importation de la police */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Réinitialisation des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Style général */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background-color: black;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* BANNIÈRE */
+.banner {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#h1 {
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* SECTION VIDÉO */
+.video-section {
+    text-align: center;
+    padding: 40px;
+    background: white;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-section h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.video-section p {
+    font-size: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    text-align: justify; /* Alignement du texte */
+}
+
+/* VIDEO RESPONSIVE */
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+}
+
+/* PRODUITS POPULAIRES */
+.produits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.produit {
+    width: 250px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.produit img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.produit h4 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.produit p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #d9534f;
+}
+
+.produit button {
+    padding: 10px;
+    background: red;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.produit button:hover {
+    background: red;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    color: white;
+    margin-top: 20px;
+}
+
+
+h2{
+    text-align: center;
+    color: red;
+}
+
+.produit small {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+}
+
+
+.produit img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+
+.social-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.social-section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 2.5rem;
+}
+
+.social-icons a {
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.social-icons .instagram {
+    color: #E1306C;
+}
+
+.social-icons .facebook {
+    color: #1877F2;
+}
+
+.social-icons .youtube {
+    color: #FF0000;
+}
+
+.social-icons .tiktok {
+    color: #000000;
+}

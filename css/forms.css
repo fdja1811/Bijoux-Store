@@ -1,0 +1,79 @@
+/* === STYLES COMMUNS AUX FORMULAIRES === */
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.form-wrapper form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-wrapper input {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.6rem 0;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.btn {
+    background: black;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background: red;
+}
+
+.bottom-link {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.bottom-link a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.error-message, .error {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.success {
+    color: green;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.notification {
+    color: orange;
+    font-size: 0.9rem;
+    display: none;
+}
+
+.notification.active {
+    display: block;
+}
+
+.constraint {
+    font-size: 0.85rem;
+    margin-left: 5px;
+    margin-bottom: 2px;
+}
